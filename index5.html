@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarshika Jewer Mehal | Biolink</title>
+    <meta name="description" content="Aarshika Jewer Mehal - Premium Jeweler in Hansi, Haryana.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#D4AF37', // Metallic Gold
+                            600: '#B49326',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: radial-gradient(circle at top right, #ffffff 0%, #e9ecef 100%);
+            background-attachment: fixed;
+        }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="text-gray-800 min-h-screen flex items-center justify-center p-4 antialiased">
+
+    <main class="w-full max-w-md bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden fade-in-up">
+        
+        <!-- Header / Profile Section -->
+        <header class="pt-10 pb-6 px-6 text-center border-b border-gray-100 relative bg-gray-50/50">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600"></div>
+            
+            <div class="w-24 h-24 mx-auto mb-4 bg-white rounded-full flex items-center justify-center border-2 border-gold-500 shadow-md">
+                <i class="fa-solid fa-gem text-3xl text-gold-500"></i>
+            </div>
+            
+            <h1 class="text-2xl md:text-3xl font-serif font-bold text-gray-900 tracking-wide mb-1">
+                Aarshika Jewer Mehal
+            </h1>
+            <h2 class="text-xl font-serif text-gold-600 mb-2">
+                आर्शिका जेवर महल
+            </h2>
+            <p class="text-sm text-gray-500 font-medium tracking-widest uppercase">
+                Premium Jeweler
+            </p>
+        </header>
+
+        <section class="p-6 space-y-4 fade-in-up delay-100">
+            
+            <!-- Call Button -->
+            <a href="tel:+919812281111" class="group flex items-center justify-between w-full p-4 bg-white rounded-xl hover:bg-gold-50 transition-all duration-300 border border-gray-200 hover:border-gold-400 shadow-sm hover:shadow-md">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 rounded-lg bg-gray-50 group-hover:bg-gold-100 flex items-center justify-center transition-colors border border-gray-100 group-hover:border-gold-200">
+                        <i class="fa-solid fa-phone text-gold-600"></i>
+                    </div>
+                    <span class="font-medium text-gray-800 group-hover:text-gold-700">Call Us</span>
+                </div>
+                <i class="fa-solid fa-chevron-right text-gray-400 group-hover:text-gold-500 transition-colors"></i>
+            </a>
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/919812281111" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between w-full p-4 bg-white rounded-xl hover:bg-green-50 transition-all duration-300 border border-gray-200 hover:border-green-400 shadow-sm hover:shadow-md">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 rounded-lg bg-gray-50 group-hover:bg-green-100 flex items-center justify-center transition-colors border border-gray-100 group-hover:border-green-200">
+                        <i class="fa-brands fa-whatsapp text-[#25D366] text-lg"></i>
+                    </div>
+                    <span class="font-medium text-gray-800 group-hover:text-green-700">WhatsApp</span>
+                </div>
+                <i class="fa-solid fa-chevron-right text-gray-400 group-hover:text-green-500 transition-colors"></i>
+            </a>
+
+            <!-- Instagram Button -->
+            <a href="https://www.instagram.com/aarshikajewermehal/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between w-full p-4 bg-white rounded-xl hover:bg-pink-50 transition-all duration-300 border border-gray-200 hover:border-pink-300 shadow-sm hover:shadow-md">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 rounded-lg bg-gray-50 group-hover:bg-pink-100 flex items-center justify-center transition-colors border border-gray-100 group-hover:border-pink-200">
+                        <i class="fa-brands fa-instagram text-[#E1306C] text-lg"></i>
+                    </div>
+                    <span class="font-medium text-gray-800 group-hover:text-pink-700">Instagram</span>
+                </div>
+                <i class="fa-solid fa-chevron-right text-gray-400 group-hover:text-pink-500 transition-colors"></i>
+            </a>
+
+            <!-- Facebook Button -->
+            <a href="https://www.facebook.com/people/Aarshika-Jewer-Mehal/61565422880757/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between w-full p-4 bg-white rounded-xl hover:bg-blue-50 transition-all duration-300 border border-gray-200 hover:border-blue-400 shadow-sm hover:shadow-md">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 rounded-lg bg-gray-50 group-hover:bg-blue-100 flex items-center justify-center transition-colors border border-gray-100 group-hover:border-blue-200">
+                        <i class="fa-brands fa-facebook-f text-[#1877F2] text-lg"></i>
+                    </div>
+                    <span class="font-medium text-gray-800 group-hover:text-blue-700">Facebook</span>
+                </div>
+                <i class="fa-solid fa-chevron-right text-gray-400 group-hover:text-blue-500 transition-colors"></i>
+            </a>
+            
+        </section>
+
+        <section class="px-6 pb-6 fade-in-up delay-200">
+            
+            <!-- Business Info Card -->
+            <div class="bg-gray-50 rounded-xl p-5 border border-gray-200 mb-4 shadow-sm">
+                <h3 class="text-gold-600 font-serif font-bold text-sm uppercase tracking-wide mb-3 flex items-center">
+                    <i class="fa-solid fa-circle-info mr-2"></i> Business Details
+                </h3>
+                
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-location-dot mt-1 w-5 text-gray-400"></i>
+                        <p class="text-gray-700 leading-relaxed font-medium">
+                            Barsi Gate, near Sheetla Mata Mandir,<br>
+                            Hansi, Haryana 125033
+                        </p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-clock mt-1 w-5 text-gray-400"></i>
+                        <p class="text-gray-700 font-medium">
+                            Opens at 8:50 AM<br>
+                            Closes at 8:00 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="bg-gray-50 rounded-xl p-2 border border-gray-200 shadow-sm">
+                <h3 class="text-gray-500 text-xs uppercase tracking-wider mb-2 ml-1 font-bold">Location Map</h3>
+                <div class="map-container h-48 w-full border border-gray-200 rounded-lg overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.244299520041!2d75.9622747750255!3d29.098468162770683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391239e813e73f0f%3A0xaf609023314aa41e!2sAarshika%20jewer%20mehal!5e0!3m2!1sen!2sin!4v1792590558718!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <a href="https://maps.google.com/?cid=12637258327464002590" target="_blank" rel="noopener noreferrer" class="mt-3 block w-full text-center py-2.5 text-sm text-gray-700 hover:text-gold-600 font-semibold transition-colors border border-gray-200 rounded-lg hover:bg-white bg-gray-100">
+                    Get Directions <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <footer class="bg-gray-50 py-4 text-center border-t border-gray-200 fade-in-up delay-300">
+            <p class="text-xs text-gray-500 font-medium">
+                &copy; <span id="year"></span> Aarshika Jewer Mehal. All Rights Reserved.
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
