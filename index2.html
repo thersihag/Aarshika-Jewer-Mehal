@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#35131d">
+  <meta name="description" content="Aarshika Jewer Mehal — jewellery store at Barsi Gate, near Sheetla Mata Mandir, Hansi, Haryana. Call, visit, or connect with us online.">
+  <title>Aarshika Jewer Mehal | आर्शिका जेवर महल</title>
+
+  <!-- Bootstrap, Google Fonts and Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --wine: #35131d;
+      --wine-deep: #210b12;
+      --wine-soft: #5b2634;
+      --gold: #d8b46b;
+      --gold-light: #f2dfad;
+      --cream: #fbf7f0;
+      --ink: #2c2022;
+      --muted: #76676a;
+      --line: rgba(216,180,107,.3);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: "DM Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; }
+    .page-shell {
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 5%, rgba(216,180,107,.10), transparent 34rem),
+        var(--cream);
+    }
+    .topline {
+      height: 5px;
+      background: linear-gradient(90deg, var(--wine-deep), var(--gold), var(--wine-soft), var(--gold), var(--wine-deep));
+    }
+    .hero {
+      position: relative;
+      color: #fffaf1;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(216,180,107,.12), transparent 22rem),
+        radial-gradient(circle at 90% 90%, rgba(216,180,107,.09), transparent 24rem),
+        linear-gradient(145deg, var(--wine-deep), var(--wine) 58%, #48202b);
+      padding: 54px 20px 70px;
+      text-align: center;
+      isolation: isolate;
+    }
+    .hero:before, .hero:after {
+      content: "";
+      position: absolute;
+      width: 210px;
+      height: 210px;
+      border: 1px solid rgba(216,180,107,.20);
+      transform: rotate(45deg);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .hero:before { left: -145px; top: 60px; }
+    .hero:after { right: -145px; bottom: 10px; }
+    .brand-mark {
+      width: 84px;
+      height: 84px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      border: 1px solid var(--gold);
+      outline: 1px solid rgba(216,180,107,.32);
+      outline-offset: 5px;
+      border-radius: 50%;
+      color: var(--gold-light);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 31px;
+      letter-spacing: -2px;
+      background: rgba(255,255,255,.035);
+    }
+    .eyebrow {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: .24em;
+      font-size: .68rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.7rem, 7vw, 4.3rem);
+      line-height: .98;
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: -.025em;
+    }
+    .hindi-name {
+      font-family: "Noto Sans Devanagari", sans-serif;
+      color: var(--gold-light);
+      font-size: clamp(1.15rem, 3vw, 1.5rem);
+      font-weight: 500;
+      margin-top: 14px;
+    }
+    .hero-rule {
+      height: 1px;
+      width: 70px;
+      background: var(--gold);
+      margin: 24px auto 18px;
+    }
+    .hero-copy {
+      max-width: 430px;
+      margin: 0 auto;
+      color: rgba(255,250,241,.78);
+      font-size: .94rem;
+      line-height: 1.75;
+    }
+    .location-line {
+      margin-top: 19px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--gold-light);
+      font-size: .83rem;
+    }
+    .content {
+      max-width: 760px;
+      margin: -28px auto 0;
+      padding: 0 18px 48px;
+      position: relative;
+      z-index: 2;
+    }
+    .contact-card {
+      background: #fffdfa;
+      border: 1px solid rgba(53,19,29,.08);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 18px 55px rgba(53,19,29,.10);
+    }
+    .section-label {
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: #96744a;
+      margin-bottom: 16px;
+    }
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 11px;
+    }
+    .action-link {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      border: 1px solid #eadfda;
+      border-radius: 11px;
+      padding: 14px 12px;
+      color: var(--wine);
+      background: #fff;
+      font-size: .9rem;
+      font-weight: 700;
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .action-link i { color: #9b7740; font-size: 1rem; }
+    .action-link:hover {
+      color: var(--wine);
+      border-color: var(--gold);
+      background: #fffaf0;
+      transform: translateY(-2px);
+    }
+    .action-link.primary {
+      background: var(--wine);
+      color: #fff9ef;
+      border-color: var(--wine);
+    }
+    .action-link.primary i { color: var(--gold-light); }
+    .action-link.primary:hover { background: #4a1c29; color: #fff; }
+    .info-section { margin-top: 35px; }
+    .section-heading {
+      font-family: "Cormorant Garamond", serif;
+      color: var(--wine);
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 0 5px;
+    }
+    .section-subtitle { color: var(--muted); font-size: .9rem; margin-bottom: 19px; }
+    .detail-card {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid #e9ded8;
+    }
+    .detail-card:last-child { border-bottom: 0; padding-bottom: 2px; }
+    .detail-icon {
+      flex: 0 0 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #f4e9df;
+      color: var(--wine);
+      font-size: 1rem;
+    }
+    .detail-title { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: #94724d; margin-bottom: 5px; }
+    .detail-value { color: var(--ink); font-size: .94rem; line-height: 1.6; overflow-wrap: anywhere; }
+    .detail-value a { color: var(--wine); font-weight: 600; }
+    .map-wrap {
+      overflow: hidden;
+      border-radius: 15px;
+      border: 1px solid #e8dbd2;
+      background: #eee;
+      box-shadow: 0 8px 24px rgba(53,19,29,.06);
+    }
+    .map-wrap iframe { display: block; width: 100%; height: 310px; border: 0; }
+    .map-caption {
+      padding: 14px 16px;
+      background: #fffdfa;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .map-caption p { margin: 0; font-size: .85rem; color: var(--muted); }
+    .map-button {
+      color: #fffaf1;
+      background: var(--wine);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: .82rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .map-button:hover { color: white; background: #4a1c29; }
+    .hours-note {
+      border-left: 3px solid var(--gold);
+      padding: 12px 15px;
+      background: #f5ede3;
+      border-radius: 0 9px 9px 0;
+      color: #5e4b4d;
+      font-size: .85rem;
+      line-height: 1.65;
+    }
+    footer {
+      text-align: center;
+      padding: 26px 16px 32px;
+      color: #8a7777;
+      font-size: .78rem;
+    }
+    footer .footer-brand {
+      font-family: "Cormorant Garamond", serif;
+      color: var(--wine);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .gold-dot { color: #b18a4a; padding: 0 4px; }
+    @media (min-width: 600px) {
+      .hero { padding-top: 66px; padding-bottom: 82px; }
+      .content { padding-left: 22px; padding-right: 22px; }
+      .contact-card { padding: 30px; }
+      .action-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .action-link { flex-direction: column; gap: 8px; min-height: 92px; font-size: .82rem; }
+      .action-link i { font-size: 1.2rem; }
+      .map-wrap iframe { height: 360px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="topline"></div>
+
+    <header class="hero">
+      <div class="brand-mark" aria-label="Aarshika initials">AJM</div>
+      <div class="eyebrow">A name to treasure</div>
+      <h1>Aarshika Jewer Mehal</h1>
+      <div class="hindi-name" lang="hi">आर्शिका जेवर महल</div>
+      <div class="hero-rule"></div>
+      <p class="hero-copy">Your local jewellery destination in Hansi, bringing timeless elegance a little closer to home.</p>
+      <div class="location-line"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Barsi Gate, Hansi, Haryana</span></div>
+    </header>
+
+    <main class="content">
+      <section class="contact-card" aria-labelledby="connect-heading">
+        <div class="section-label" id="connect-heading">Connect with us</div>
+        <div class="action-grid">
+          <a class="action-link primary" href="tel:+919812281111" aria-label="Call Aarshika Jewer Mehal">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i><span>Call Store</span>
+          </a>
+          <a class="action-link" href="https://www.google.com/maps/dir/?api=1&destination=Aarshika%20Jewer%20Mehal%2C%20Barsi%20Gate%2C%20Hansi%2C%20Haryana%20125033" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i><span>Get Directions</span>
+          </a>
+          <a class="action-link" href="https://www.instagram.com/aarshikajewermehal/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Instagram</span>
+          </a>
+          <a class="action-link" href="https://www.facebook.com/people/Aarshika-Jewer-Mehal/61565422880757/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="info-section" aria-labelledby="visit-heading">
+        <h2 class="section-heading" id="visit-heading">Visit Our Store</h2>
+        <p class="section-subtitle">We look forward to welcoming you.</p>
+        <div class="contact-card">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+            <div>
+              <div class="detail-title">Store Address</div>
+              <div class="detail-value">Barsi Gate, near Sheetla Mata Mandir,<br>Hansi, Haryana 125033, India</div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+            <div>
+              <div class="detail-title">Phone</div>
+              <div class="detail-value"><a href="tel:+919812281111">098122 81111</a></div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></div>
+            <div>
+              <div class="detail-title">Store Hours</div>
+              <div class="detail-value">Please call before visiting to confirm today's opening hours.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section" aria-labelledby="map-heading">
+        <h2 class="section-heading" id="map-heading">Find Us on the Map</h2>
+        <p class="section-subtitle">Near Sheetla Mata Mandir, Barsi Gate, Hansi.</p>
+        <div class="map-wrap">
+          <iframe
+            title="Map showing Aarshika Jewer Mehal in Hansi, Haryana"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.244299520041!2d75.9622747750255!3d29.098468162770683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391239e813e73f0f%3A0xaf609023314aa41e!2sAarshika%20jewer%20mehal!5e0!3m2!1sen!2sin!4v1792590558718!5m2!1sen!2sin"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+          <div class="map-caption">
+            <p><strong>Aarshika Jewer Mehal</strong><br>Barsi Gate, Hansi, Haryana 125033</p>
+            <a class="map-button" href="https://www.google.com/maps/dir/?api=1&destination=Aarshika%20Jewer%20Mehal%2C%20Barsi%20Gate%2C%20Hansi%2C%20Haryana%20125033" target="_blank" rel="noopener noreferrer">
+              Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section" aria-label="Helpful note">
+        <div class="hours-note">
+          <strong>Planning a visit?</strong> Store timings can change on holidays or special occasions. A quick call will help confirm availability before you travel.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">Aarshika Jewer Mehal</div>
+      <div lang="hi">आर्शिका जेवर महल</div>
+      <div class="mt-2">Hansi <span class="gold-dot">•</span> Haryana <span class="gold-dot">•</span> India</div>
+      <div class="mt-3">© <span id="year"></span> Aarshika Jewer Mehal. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Keep the copyright year current without needing to edit the file.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
