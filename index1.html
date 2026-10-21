@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarshika Jewer Mehal | Exclusive Jeweler</title>
+    <meta name="description" content="Aarshika Jewer Mehal (आर्शिका जेवर महल) - Premium Jeweler in Hansi, Haryana.">
+    
+    <!-- Google Fonts: Cormorant Garamond for luxury serif, Montserrat for clean sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons (No Emojis) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        onyx: {
+                            900: '#0a0a0a',
+                            800: '#141414',
+                            700: '#1f1f1f',
+                        },
+                        champagne: {
+                            300: '#f9f1e6',
+                            400: '#ebd5b3',
+                            500: '#d4af37', // Gold
+                            600: '#b8942b',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'radial-glow': 'radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.15) 0%, rgba(10, 10, 10, 0) 70%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #f9f1e6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Glass/Outline Button Style */
+        .luxury-btn {
+            background: rgba(31, 31, 31, 0.4);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .luxury-btn:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: rgba(212, 175, 55, 0.8);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.2);
+        }
+
+        .luxury-btn i {
+            transition: transform 0.4s ease;
+        }
+        
+        .luxury-btn:hover i.fa-chevron-right {
+            transform: translateX(4px);
+        }
+
+        /* Map Container */
+        .map-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: grayscale(20%) contrast(110%);
+        }
+
+        /* Custom Toast Notification */
+        #toast {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s linear;
+        }
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen flex items-center justify-center p-4 sm:p-6 relative bg-onyx-900 bg-radial-glow overflow-x-hidden">
+
+    <!-- Toast Notification for Share/Copy -->
+    <div id="toast" class="fixed top-5 left-1/2 transform -translate-x-1/2 z-50 bg-champagne-500 text-onyx-900 px-6 py-3 rounded-full font-medium text-sm flex items-center gap-2 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Link copied to clipboard!</span>
+    </div>
+
+    <!-- Main Biolink Container -->
+    <main class="w-full max-w-md w-full relative z-10 py-8">
+        
+        <header class="flex flex-col items-center text-center mb-10 px-4">
+            <!-- Luxury Monogram Logo -->
+            <div class="w-28 h-28 rounded-full mb-6 relative p-1 border border-champagne-500/50 shadow-[0_0_30px_rgba(212,175,55,0.15)] flex items-center justify-center">
+                <div class="absolute inset-0 rounded-full border border-champagne-500 animate-[spin_10s_linear_infinite] opacity-30 border-dashed"></div>
+                <div class="w-full h-full rounded-full bg-onyx-800 flex items-center justify-center text-champagne-500 text-4xl font-serif font-bold">
+                    AJM
+                </div>
+            </div>
+
+            <h1 class="text-3xl md:text-4xl font-serif font-bold text-champagne-400 mb-1 tracking-wide">Aarshika Jewer Mehal</h1>
+            <h2 class="text-xl font-serif text-champagne-600 mb-4 tracking-wider">आर्शिका जेवर महल</h2>
+            
+            <div class="flex items-center justify-center gap-3 text-xs tracking-[0.2em] uppercase text-gray-400 mb-5">
+                <span class="w-8 h-[1px] bg-champagne-500/50"></span>
+                <i class="fa-regular fa-gem text-champagne-500"></i>
+                <span>Exclusive Jewelry</span>
+                <i class="fa-regular fa-gem text-champagne-500"></i>
+                <span class="w-8 h-[1px] bg-champagne-500/50"></span>
+            </div>
+            
+            <p class="text-sm text-gray-400 font-light flex items-center justify-center gap-2 bg-onyx-800/50 px-4 py-1.5 rounded-full border border-white/5">
+                <i class="fa-regular fa-clock text-champagne-500"></i>
+                Open 8:50 AM - 8:00 PM
+            </p>
+        </header>
+
+        <div class="flex flex-col gap-4 mb-10 px-2">
+            
+            <!-- Call -->
+            <a href="tel:+919812281111" class="luxury-btn flex items-center p-4 rounded-xl text-decoration-none group">
+                <div class="w-12 h-12 rounded-full bg-onyx-900 border border-champagne-500/30 text-champagne-500 flex items-center justify-center group-hover:bg-champagne-500 group-hover:text-onyx-900 transition-colors">
+                    <i class="fa-solid fa-phone text-lg"></i>
+                </div>
+                <div class="ml-4 flex-grow text-left">
+                    <h3 class="text-champagne-300 font-medium text-lg font-serif">Call Store</h3>
+                    <p class="text-xs text-gray-400 font-light">+91 98122 81111</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-champagne-500/50 group-hover:text-champagne-500"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/919812281111" target="_blank" rel="noopener noreferrer" class="luxury-btn flex items-center p-4 rounded-xl text-decoration-none group">
+                <div class="w-12 h-12 rounded-full bg-onyx-900 border border-champagne-500/30 text-champagne-500 flex items-center justify-center group-hover:bg-[#25D366] group-hover:border-[#25D366] group-hover:text-white transition-colors">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                </div>
+                <div class="ml-4 flex-grow text-left">
+                    <h3 class="text-champagne-300 font-medium text-lg font-serif">WhatsApp</h3>
+                    <p class="text-xs text-gray-400 font-light">Message us directly</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-champagne-500/50 group-hover:text-champagne-500"></i>
+            </a>
+
+            <!-- Social Media Row -->
+            <div class="grid grid-cols-2 gap-4 mt-2">
+                <a href="https://www.instagram.com/aarshikajewermehal/" target="_blank" rel="noopener noreferrer" class="luxury-btn flex flex-col items-center justify-center p-4 rounded-xl text-decoration-none group">
+                    <i class="fa-brands fa-instagram text-2xl text-champagne-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-xs text-champagne-300 tracking-wider">INSTAGRAM</span>
+                </a>
+                
+                <a href="https://www.facebook.com/people/Aarshika-Jewer-Mehal/61565422880757/" target="_blank" rel="noopener noreferrer" class="luxury-btn flex flex-col items-center justify-center p-4 rounded-xl text-decoration-none group">
+                    <i class="fa-brands fa-facebook-f text-2xl text-champagne-500 mb-2 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-xs text-champagne-300 tracking-wider">FACEBOOK</span>
+                </a>
+            </div>
+            
+            <!-- Get Directions (Highlighted) -->
+            <a href="https://www.google.com/maps/dir//Aarshika+jewer+mehal/" target="_blank" rel="noopener noreferrer" class="mt-2 block w-full bg-champagne-500 text-onyx-900 text-center py-4 rounded-xl font-medium tracking-wide shadow-[0_4px_15px_rgba(212,175,55,0.3)] hover:bg-champagne-400 transition-colors">
+                <i class="fa-solid fa-diamond-turn-right mr-2"></i> Get Directions
+            </a>
+        </div>
+
+        <!-- Location & Map -->
+        <div class="px-2 mb-10">
+            <div class="flex items-center gap-3 mb-4 justify-center text-center">
+                <span class="w-12 h-[1px] bg-gradient-to-r from-transparent to-champagne-500/50"></span>
+                <h3 class="text-sm font-serif italic tracking-widest text-champagne-500">VISIT US</h3>
+                <span class="w-12 h-[1px] bg-gradient-to-l from-transparent to-champagne-500/50"></span>
+            </div>
+            
+            <div class="bg-onyx-800/50 border border-white/5 rounded-2xl p-5 backdrop-blur-sm">
+                <p class="text-sm text-gray-300 leading-relaxed text-center mb-5 font-light">
+                    <i class="fa-solid fa-location-dot text-champagne-500 mr-1"></i>
+                    Barsi Gate, Near Sheetla Mata Mandir,<br>
+                    Hansi, Haryana 125033
+                </p>
+                
+                <div class="w-full relative pt-[60%] rounded-xl overflow-hidden shadow-inner border border-champagne-500/20 map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.244299520041!2d75.9622747750255!3d29.098468162770683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391239e813e73f0f%3A0xaf609023314aa41e!2sAarshika%20jewer%20mehal!5e0!3m2!1sen!2sin!4v1792590558718!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center pb-4">
+            <button id="shareBtn" class="text-gray-400 hover:text-champagne-500 transition-colors text-sm mb-6 flex items-center justify-center mx-auto gap-2 group">
+                <div class="w-8 h-8 rounded-full bg-onyx-800 flex items-center justify-center border border-white/5 group-hover:border-champagne-500/50 transition-colors">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </div>
+                <span class="font-light tracking-wide">Share Connect</span>
+            </button>
+            <p class="text-xs text-gray-600 font-serif tracking-widest">&copy; <span id="currentYear"></span> AARSHIKA JEWER MEHAL</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Set dynamic year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Share functionality
+        const shareBtn = document.getElementById('shareBtn');
+        const toast = document.getElementById('toast');
+
+        function showToast() {
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        shareBtn.addEventListener('click', async () => {
+            const shareInfo = {
+                title: 'Aarshika Jewer Mehal',
+                text: 'Exclusive Jeweler in Hansi, Haryana.',
+                url: window.location.href
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareInfo);
+                } else {
+                    // Fallback clipboard copy
+                    await navigator.clipboard.writeText(window.location.href);
+                    showToast();
+                }
+            } catch (err) {
+                console.error('Share failed:', err);
+                // If user cancels share, do nothing. If error, try clipboard as fallback.
+                if (err.name !== 'AbortError') {
+                    try {
+                        await navigator.clipboard.writeText(window.location.href);
+                        showToast();
+                    } catch (e) {
+                         console.error('Clipboard fallback failed:', e);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
