@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aarshika Jewer Mehal | Jewellers in Hansi, Haryana</title>
+<meta name="description" content="Aarshika Jewer Mehal, jewellers at Barsi Gate, Hansi, Haryana. Call, get directions, save our contact, or follow us on Instagram and Facebook.">
+<meta name="theme-color" content="#0e2f2a">
+<meta property="og:title" content="Aarshika Jewer Mehal">
+<meta property="og:description" content="Jewellers at Barsi Gate, Hansi, Haryana. Phone 098122 81111.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Hind:wght@400;500;600&family=Noto+Serif+Devanagari:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { ink: '#0e2f2a', ink2: '#143f38', brass: '#b58a3c', brass2: '#d4ad62', pearl: '#f2efe9', stone: '#5e6663', line: '#d9d4c9' },
+        fontFamily: {
+          display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+          deva: ['"Noto Serif Devanagari"', 'serif'],
+          body: ['Hind', 'system-ui', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Hind, system-ui, sans-serif; background: #e7e3da; color: #0e2f2a; }
+  html[lang="hi"] .font-display { font-family: "Noto Serif Devanagari", serif; letter-spacing: 0; }
+
+  /* Lattice pattern on the masthead, reads as a jali screen */
+  .masthead {
+    background-color: #0e2f2a;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 0 L40 20 L20 40 L0 20 Z' fill='none' stroke='%23b58a3c' stroke-opacity='.13' stroke-width='1'/%3E%3C/svg%3E"),
+      radial-gradient(ellipse at 50% 0%, rgba(181,138,60,.22), transparent 62%);
+  }
+  .brass-rule { height: 3px; background: linear-gradient(90deg, #8a6522, #d4ad62, #8a6522); }
+
+  /* One orchestrated entrance, header only */
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @keyframes ring { from { opacity: 0; transform: scale(.86) rotate(-40deg); } to { opacity: 1; transform: none; } }
+  .in-ring { animation: ring .9s cubic-bezier(.2,.7,.2,1) both; }
+  .in-1 { animation: rise .6s .35s ease both; }
+  .in-2 { animation: rise .6s .5s ease both; }
+  .in-3 { animation: rise .6s .65s ease both; }
+  .in-4 { animation: rise .6s .8s ease both; }
+
+  .row-link { transition: background-color .15s ease; }
+  .row-link:hover { background: #e9e5dc; }
+  .row-link:hover .chev { transform: translateX(3px); }
+  .chev { transition: transform .15s ease; }
+  .icon-box { transition: background-color .15s ease, color .15s ease; }
+  .row-link:hover .icon-box { background: #0e2f2a; color: #d4ad62; }
+
+  .lang-btn[aria-pressed="true"] { background: #b58a3c; color: #0e2f2a; }
+  :focus-visible { outline: 2px solid #b58a3c; outline-offset: 2px; }
+
+  #toast { transition: opacity .2s ease, transform .2s ease; }
+  #toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body class="min-h-screen antialiased">
+
+<main class="relative mx-auto w-full max-w-md overflow-hidden bg-pearl pb-24 shadow-xl sm:my-8">
+
+  <!-- Masthead -->
+  <header class="masthead relative px-6 pb-10 pt-8 text-center">
+    <div class="absolute right-4 top-4 flex overflow-hidden rounded-full border border-pearl/25 text-xs font-medium" role="group" aria-label="Language">
+      <button type="button" class="lang-btn px-3 py-1.5 text-pearl/85" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn px-3 py-1.5 font-deva text-pearl/85" data-lang="hi" aria-pressed="false">हिं</button>
+    </div>
+
+    <div class="in-ring relative mx-auto mt-6 flex h-28 w-28 items-center justify-center rounded-full border border-brass/70">
+      <span class="absolute inset-2 rounded-full border border-brass/30"></span>
+      <span class="font-display text-6xl font-semibold leading-none text-brass2">A</span>
+    </div>
+
+    <h1 class="in-1 mt-7 font-display text-4xl font-semibold tracking-wide text-pearl">Aarshika Jewer Mehal</h1>
+    <p class="in-2 mt-1 font-deva text-xl text-brass2" lang="hi">आर्शिका जेवर महल</p>
+    <p class="in-3 mx-auto mt-4 max-w-xs text-[15px] leading-relaxed text-pearl/75" data-i18n="tagline">Jewellers at Barsi Gate, Hansi, Haryana.</p>
+    <p class="in-4 mt-5 inline-flex items-center gap-2 rounded-full border border-pearl/25 px-3.5 py-1.5 text-sm text-pearl/90" aria-live="polite">
+      <span id="dot" class="h-2 w-2 rounded-full bg-stone"></span>
+      <span id="statusText">&nbsp;</span>
+    </p>
+  </header>
+  <div class="brass-rule"></div>
+
+  <!-- Primary actions -->
+  <section class="grid grid-cols-2 gap-3 px-6 pt-7">
+    <a href="tel:+919812281111" class="col-span-2 flex items-center justify-center gap-3 bg-ink px-5 py-4 text-lg font-medium text-pearl transition-colors hover:bg-ink2">
+      <i class="fa-solid fa-phone text-brass2" aria-hidden="true"></i>
+      <span><span data-i18n="call">Call</span> 098122 81111</span>
+    </a>
+    <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Aarshika+Jewer+Mehal+Barsi+Gate+Hansi+Haryana"
+       class="flex items-center justify-center gap-2 border border-ink px-4 py-3 text-[15px] font-medium transition-colors hover:bg-ink hover:text-pearl">
+      <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i><span data-i18n="directions">Directions</span>
+    </a>
+    <button id="saveBtn" type="button"
+       class="flex items-center justify-center gap-2 border border-ink px-4 py-3 text-[15px] font-medium transition-colors hover:bg-ink hover:text-pearl">
+      <i class="fa-solid fa-address-book" aria-hidden="true"></i><span data-i18n="save">Save contact</span>
+    </button>
+  </section>
+
+  <!-- Links -->
+  <nav class="px-6 pt-6" aria-label="Links">
+    <ul class="divide-y divide-line border-y border-line">
+      <li>
+        <a class="row-link flex items-center gap-4 px-1 py-4" target="_blank" rel="noopener" href="https://www.instagram.com/aarshikajewermehal/">
+          <span class="icon-box flex h-10 w-10 shrink-0 items-center justify-center bg-ink/5"><i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i></span>
+          <span class="flex-1"><span class="block font-semibold" data-i18n="ig">Instagram</span><span class="block text-sm text-stone">@aarshikajewermehal</span></span>
+          <i class="fa-solid fa-chevron-right chev text-xs text-stone" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="row-link flex items-center gap-4 px-1 py-4" target="_blank" rel="noopener" href="https://www.facebook.com/people/Aarshika-Jewer-Mehal/61565422880757/">
+          <span class="icon-box flex h-10 w-10 shrink-0 items-center justify-center bg-ink/5"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+          <span class="flex-1"><span class="block font-semibold" data-i18n="fb">Facebook</span><span class="block text-sm text-stone">Aarshika Jewer Mehal</span></span>
+          <i class="fa-solid fa-chevron-right chev text-xs text-stone" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <button id="shareBtn" type="button" class="row-link flex w-full items-center gap-4 px-1 py-4 text-left">
+          <span class="icon-box flex h-10 w-10 shrink-0 items-center justify-center bg-ink/5"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></span>
+          <span class="flex-1"><span class="block font-semibold" data-i18n="share">Share this page</span><span class="block text-sm text-stone" data-i18n="shareSub">Send our details to someone</span></span>
+          <i class="fa-solid fa-chevron-right chev text-xs text-stone" aria-hidden="true"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Visit -->
+  <section class="px-6 pt-10" aria-labelledby="visit-h">
+    <h2 id="visit-h" class="font-display text-3xl font-semibold" data-i18n="visit">Visit the shop</h2>
+    <dl class="mt-4 space-y-5 text-[15px] leading-relaxed">
+      <div class="flex gap-4">
+        <dt class="w-6 pt-1 text-brass"><i class="fa-solid fa-store" aria-hidden="true"></i><span class="sr-only">Address</span></dt>
+        <dd class="flex-1">
+          <span data-i18n="addr">Barsi Gate, opposite Sheetla Mata Mandir,<br>Hansi, Haryana 125033</span>
+          <button id="copyAddr" type="button" class="mt-1 block text-sm text-stone underline decoration-brass underline-offset-4 hover:text-ink" data-i18n="copy">Copy address</button>
+        </dd>
+      </div>
+      <div class="flex gap-4">
+        <dt class="w-6 pt-1 text-brass"><i class="fa-regular fa-clock" aria-hidden="true"></i><span class="sr-only">Hours</span></dt>
+        <dd><span data-i18n="hours">Opens 8:50 am, closes 8 pm</span><br><span class="text-sm text-stone" data-i18n="hoursNote">Please call to confirm timings on holidays.</span></dd>
+      </div>
+      <div class="flex gap-4">
+        <dt class="w-6 pt-1 text-brass"><i class="fa-solid fa-phone" aria-hidden="true"></i><span class="sr-only">Phone</span></dt>
+        <dd><a class="underline decoration-brass underline-offset-4" href="tel:+919812281111">098122 81111</a></dd>
+      </div>
+    </dl>
+
+    <div class="mt-6 border border-line">
+      <iframe title="Map showing Aarshika Jewer Mehal in Hansi"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.244299520041!2d75.9622747750255!3d29.098468162770683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391239e813e73f0f%3A0xaf609023314aa41e!2sAarshika%20jewer%20mehal!5e0!3m2!1sen!2sin!4v1792590558718!5m2!1sen!2sin"
+        class="block h-64 w-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </section>
+
+  <footer class="mt-12 border-t border-line px-6 py-8 text-center">
+    <p class="font-display text-xl font-semibold">Aarshika Jewer Mehal</p>
+    <p class="mt-1 text-sm text-stone" data-i18n="foot">Barsi Gate, Hansi, Haryana</p>
+    <p class="mt-4 text-xs text-stone">&copy; <span id="yr"></span> Aarshika Jewer Mehal</p>
+  </footer>
+
+  <!-- Sticky action bar, appears after the primary buttons scroll away -->
+  <div id="bar" class="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto flex w-full max-w-md translate-y-full gap-px bg-ink opacity-0 transition duration-300" style="padding-bottom: env(safe-area-inset-bottom, 0px);">
+    <a href="tel:+919812281111" class="flex flex-1 items-center justify-center gap-2 py-3.5 text-[15px] font-medium text-pearl hover:bg-ink2">
+      <i class="fa-solid fa-phone text-brass2" aria-hidden="true"></i><span data-i18n="callShort">Call</span>
+    </a>
+    <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Aarshika+Jewer+Mehal+Barsi+Gate+Hansi+Haryana" class="flex flex-1 items-center justify-center gap-2 border-l border-pearl/15 py-3.5 text-[15px] font-medium text-pearl hover:bg-ink2">
+      <i class="fa-solid fa-diamond-turn-right text-brass2" aria-hidden="true"></i><span data-i18n="directions">Directions</span>
+    </a>
+  </div>
+</main>
+
+<div id="toast" role="status" aria-live="polite" class="pointer-events-none fixed bottom-24 left-1/2 z-40 -translate-x-1/2 translate-y-2 bg-ink px-4 py-2 text-sm text-pearl opacity-0 shadow-lg"></div>
+
+<script>
+(function () {
+  var T = {
+    en: {
+      tagline: 'Jewellers at Barsi Gate, Hansi, Haryana.',
+      call: 'Call', callShort: 'Call', directions: 'Directions', save: 'Save contact',
+      ig: 'Instagram', fb: 'Facebook', share: 'Share this page', shareSub: 'Send our details to someone',
+      visit: 'Visit the shop',
+      addr: 'Barsi Gate, opposite Sheetla Mata Mandir,<br>Hansi, Haryana 125033',
+      copy: 'Copy address',
+      hours: 'Opens 8:50 am, closes 8 pm', hoursNote: 'Please call to confirm timings on holidays.',
+      foot: 'Barsi Gate, Hansi, Haryana',
+      open: 'Open now, until 8 pm', closing: 'Open, closes at 8 pm', closed: 'Closed, opens 8:50 am',
+      copied: 'Address copied', saved: 'Contact file downloaded', linkCopied: 'Link copied'
+    },
+    hi: {
+      tagline: 'बरसी गेट, हांसी, हरियाणा में आपका जौहरी।',
+      call: 'कॉल करें', callShort: 'कॉल', directions: 'रास्ता देखें', save: 'संपर्क सेव करें',
+      ig: 'इंस्टाग्राम', fb: 'फेसबुक', share: 'यह पेज शेयर करें', shareSub: 'हमारी जानकारी अपनों को भेजें',
+      visit: 'दुकान पर आएं',
+      addr: 'बरसी गेट, शीतला माता मंदिर के सामने,<br>हांसी, हरियाणा 125033',
+      copy: 'पता कॉपी करें',
+      hours: 'सुबह 8:50 बजे खुलता है, रात 8 बजे बंद', hoursNote: 'छुट्टियों में समय जानने के लिए कृपया कॉल करें।',
+      foot: 'बरसी गेट, हांसी, हरियाणा',
+      open: 'अभी खुला है, रात 8 बजे तक', closing: 'खुला है, रात 8 बजे बंद होगा', closed: 'बंद है, सुबह 8:50 बजे खुलेगा',
+      copied: 'पता कॉपी हो गया', saved: 'संपर्क फ़ाइल डाउनलोड हुई', linkCopied: 'लिंक कॉपी हो गया'
+    }
+  };
+  var lang = 'en';
+  try { lang = localStorage.getItem('ajm-lang') || ((navigator.language || '').indexOf('hi') === 0 ? 'hi' : 'en'); } catch (e) {}
+
+  var toastEl = document.getElementById('toast'), toastT;
+  function toast(msg) {
+    toastEl.textContent = msg; toastEl.classList.add('show');
+    clearTimeout(toastT); toastT = setTimeout(function () { toastEl.classList.remove('show'); }, 2200);
+  }
+
+  function status() {
+    var p = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date());
+    var h = +p.filter(function (x) { return x.type === 'hour'; })[0].value % 24;
+    var m = +p.filter(function (x) { return x.type === 'minute'; })[0].value;
+    var mins = h * 60 + m, open = 8 * 60 + 50, close = 20 * 60;
+    var dot = document.getElementById('dot'), el = document.getElementById('statusText'), s = T[lang];
+    if (mins >= open && mins < close) {
+      dot.style.background = '#6fbf8f';
+      el.textContent = (close - mins <= 60) ? s.closing : s.open;
+    } else {
+      dot.style.background = '#c98a7a';
+      el.textContent = s.closed;
+    }
+  }
+
+  function apply(l) {
+    lang = l; document.documentElement.lang = l;
+    document.querySelectorAll('[data-i18n]').forEach(function (n) {
+      var v = T[l][n.getAttribute('data-i18n')];
+      if (v !== undefined) n.innerHTML = v;
+    });
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === l ? 'true' : 'false');
+    });
+    status();
+    try { localStorage.setItem('ajm-lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-lang')); });
+  });
+
+  // Save contact as a vCard
+  document.getElementById('saveBtn').addEventListener('click', function () {
+    var v = ['BEGIN:VCARD', 'VERSION:3.0', 'FN:Aarshika Jewer Mehal', 'ORG:Aarshika Jewer Mehal', 'TITLE:Jewellers',
+      'TEL;TYPE=WORK,VOICE:+919812281111',
+      'ADR;TYPE=WORK:;;Barsi Gate\\, near Sheetla Mata Mandir;Hansi;Haryana;125033;India',
+      'URL:https://www.instagram.com/aarshikajewermehal/', 'END:VCARD'].join('\r\n');
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([v], { type: 'text/vcard' }));
+    a.download = 'Aarshika-Jewer-Mehal.vcf';
+    document.body.appendChild(a); a.click(); a.remove();
+    toast(T[lang].saved);
+  });
+
+  // Copy address
+  document.getElementById('copyAddr').addEventListener('click', function () {
+    var txt = 'Aarshika Jewer Mehal, Barsi Gate, opposite Sheetla Mata Mandir, Hansi, Haryana 125033';
+    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(function () { toast(T[lang].copied); });
+  });
+
+  // Share
+  document.getElementById('shareBtn').addEventListener('click', function () {
+    var d = { title: 'Aarshika Jewer Mehal', text: 'Aarshika Jewer Mehal, Barsi Gate, Hansi. Phone 098122 81111', url: location.href };
+    if (navigator.share) { navigator.share(d).catch(function () {}); return; }
+    if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(function () { toast(T[lang].linkCopied); });
+  });
+
+  // Sticky bar after the primary buttons leave the screen
+  var bar = document.getElementById('bar'), first = document.getElementById('saveBtn');
+  function barShow(on) {
+    bar.classList.toggle('opacity-0', !on); bar.classList.toggle('translate-y-full', !on);
+    bar.classList.toggle('pointer-events-none', !on);
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) { barShow(!e[0].isIntersecting && e[0].boundingClientRect.top < 0); }).observe(first);
+  }
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  apply(lang);
+  setInterval(status, 60000);
+})();
+</script>
+</body>
+</html>
